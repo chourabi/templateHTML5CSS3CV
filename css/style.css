@@ -166,3 +166,24 @@ ul{
 }
 
 .user-info-bloc{height:100vh ; }
+
+@keyframes anim{
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    };
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    };
+    
+}
+
+
+.my-super-animation{
+    transform: translateX(0);
+    animation: anim;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+
+}
