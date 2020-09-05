@@ -4,9 +4,11 @@ class Jaime extends React.Component {
 
     constructor(props){
         super(props);
+        console.log(props);
         this.state={
             count: props.count,
-            didLike:props.didLike
+            didLike:props.didLike,
+            updateArticle:props.updateArticle
         }
     }
 
@@ -24,6 +26,8 @@ class Jaime extends React.Component {
                 didLike: ! this.state.didLike
             })
         }
+
+        this.state.updateArticle(this.state.count+1);
         
     }
 
